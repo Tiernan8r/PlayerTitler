@@ -1,0 +1,12 @@
+main: me.Tiernanator.PlayerTitler.Main
+version: 2.0
+name: Welcomer
+description: A Plugin that Welcomes the Player when they join
+load: POSTWORLD
+author: Tiernanator
+website: None
+database: false
+depend: [Utilities]
+prefix: Titler
+softdepend: []
+loadbefore: []
