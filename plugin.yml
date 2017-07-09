@@ -1,4 +1,4 @@
-main: me.Tiernanator.PlayerTitler.Main
+main: me.Tiernanator.PlayerTitler.PlayerTitlerMain
 version: 2.0
 name: Welcomer
 description: A Plugin that Welcomes the Player when they join

@@ -4,14 +4,14 @@ import org.bukkit.boss.BossBar;
 import org.bukkit.entity.Player;
 import org.bukkit.scheduler.BukkitRunnable;
 
-import me.Tiernanator.PlayerTitler.Main;
+import me.Tiernanator.PlayerTitler.PlayerTitlerMain;
 import me.Tiernanator.Utilities.MetaData.MetaData;
 
 public class PlayerBar extends BukkitRunnable {
 
-	private static Main plugin;
+	private static PlayerTitlerMain plugin;
 
-	public PlayerBar(Main main) {
+	public PlayerBar(PlayerTitlerMain main) {
 		plugin = main;
 	}
 	

@@ -7,8 +7,8 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
 
 import me.Tiernanator.Packets.Titler.PlayerTitler;
-import me.Tiernanator.PlayerTitler.Main;
-import net.minecraft.server.v1_11_R1.PacketPlayOutTitle.EnumTitleAction;
+import me.Tiernanator.Packets.Titler.TitleAction;
+import me.Tiernanator.PlayerTitler.PlayerTitlerMain;
 
 public class PlayerJoinTitler implements Listener {
 
@@ -18,7 +18,7 @@ public class PlayerJoinTitler implements Listener {
 	private int fadeOutTicks = 30;
 	
 
-	public PlayerJoinTitler(Main main) {
+	public PlayerJoinTitler(PlayerTitlerMain main) {
 	}
 
 
@@ -30,14 +30,14 @@ public class PlayerJoinTitler implements Listener {
 //		if (PlayerLogger.ifPlayerHasPlayedBefore(player)) {
 		if(player.hasPlayedBefore()) {
 			
-			PlayerTitler.playerTitle(player, "Welcome Back!", true, false, false, ChatColor.BLUE, fadeInTicks, stayTicks, fadeOutTicks, EnumTitleAction.TITLE);
+			PlayerTitler.playerTitle(player, "Welcome Back!", true, false, false, ChatColor.BLUE, fadeInTicks, stayTicks, fadeOutTicks, TitleAction.TITLE);
 			
 		} else {
 
-			PlayerTitler.playerTitle(player, "Welcome!", true, false, false, ChatColor.BLUE, fadeInTicks, stayTicks, fadeOutTicks, EnumTitleAction.TITLE);
+			PlayerTitler.playerTitle(player, "Welcome!", true, false, false, ChatColor.BLUE, fadeInTicks, stayTicks, fadeOutTicks, TitleAction.TITLE);
 			
 		}
-		PlayerTitler.playerTitle(player, "Enjoy your Play!", true, true, true, ChatColor.DARK_PURPLE, fadeInTicks * 2, stayTicks * 2, fadeOutTicks * 2, EnumTitleAction.SUBTITLE);
+		PlayerTitler.playerTitle(player, "Enjoy your Play!", true, true, true, ChatColor.DARK_PURPLE, fadeInTicks * 2, stayTicks * 2, fadeOutTicks * 2, TitleAction.SUBTITLE);
 
 
 	}

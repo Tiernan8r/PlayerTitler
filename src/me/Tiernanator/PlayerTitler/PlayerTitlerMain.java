@@ -8,7 +8,7 @@ import me.Tiernanator.PlayerTitler.Events.PlayerJoinTitler;
 import me.Tiernanator.PlayerTitler.Schedules.PlayerBar;
 
 
-public class Main extends JavaPlugin {
+public class PlayerTitlerMain extends JavaPlugin {
 
 	@Override
 	public void onEnable() {
