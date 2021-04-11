@@ -6,9 +6,9 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
 
-import me.Tiernanator.Packets.Titler.PlayerTitler;
-import me.Tiernanator.Packets.Titler.TitleAction;
 import me.Tiernanator.PlayerTitler.PlayerTitlerMain;
+import me.Tiernanator.Utilities.Packets.Titler.PlayerTitler;
+import me.Tiernanator.Utilities.Packets.Titler.TitleAction;
 
 public class PlayerJoinTitler implements Listener {
 
